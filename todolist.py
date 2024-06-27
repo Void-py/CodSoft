@@ -44,7 +44,7 @@ while True:
                 cursor_1.execute(f"UPDATE main_table SET task_name = '{new_name}', task_time = '{task_time}' WHERE task_name='{task_name}'")
                 print("TASK RECORD UPDATED SUCCESSFULLY")
             else:
-                print("A TASK WITH THAT NAME ALREADY EXISTS")
+                print("A TASK WITH THAT NAME ALREADY EXISTS OR THE TIME FORMAT IS INCORRECT")
         else:
             print("INVALID TASK INPUT ,PLEASE ENTER A VALID ONE.")
     elif (user_inp==4):
